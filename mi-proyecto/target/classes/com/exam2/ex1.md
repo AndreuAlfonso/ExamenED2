@@ -1,1 +1,1 @@
-# Exercici 1 - Andreu Alfonso
+# Exercici 1 - Andreu_Alfonso
