@@ -1,30 +1,48 @@
 package com.exam2;
 
 public class Lamp {
-    public static void main(String[] args) {
+    private double consumption;
+    private boolean turnedOn;
 
-        public boolean isOn() {
+    Lamp(double consumption) {
+        this.consumption = consumption;
+    }
 
+    Lamp(double consumption, boolean turnedOn) {
+        this.consumption = consumption;
+        this.turnedOn = turnedOn;
+    }
+
+    public boolean isOn() {
+        return turnedOn;
+    }
+
+    public double getConsumption() {
+        return consumption;
+    }
+
+    public void turnOn() {
+        this.turnedOn = true;
+    }
+
+    public void turnOff() {
+        this.turnedOn = false;
+    }
+
+    public void toggle() {
+        if (turnedOn = true) {
+            turnedOn = false;
+        } else if (turnedOn = false) {
+            turnedOn = true;
         }
+    }
 
-        public double getConsumption() {
-
+    public double consume(double seconds) {
+        if (turnedOn = false) {
+            return 0;
+        } else if (turnedOn = true) {
+            return getConsumption() * seconds / 3600;
         }
-
-        public turnOn() {
-
-        }
-
-        public turnOff() {
-
-        }
-
-        public toggle() {
-
-        }
-
-        public double consume(double seconds) {
-            
-        }
+        return consumption;
     }
 }
